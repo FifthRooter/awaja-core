@@ -1,0 +1,9 @@
+{
+  "name": "awaja-core",
+  "version": "1.0.0",
+  "description": "Automatically launch fractionalized music NFT to streaming platforms once NFT has been fully sold out",
+  "main": "index.js",
+  "author": "Arbestor Dinggleback <toms@arbestor.xyz>",
+  "license": "MIT",
+  "private": false
+}
