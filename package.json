@@ -5,5 +5,11 @@
   "main": "index.js",
   "author": "Arbestor Dinggleback <toms@arbestor.xyz>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "hardhat": "^2.12.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1"
+  }
 }
