@@ -8,7 +8,7 @@ Instead of making the actual music of the NFT public before/while selling your f
 
 ---
 
-**tl;dr** Fractionalize a song NFT and let fans purchase the fractions. After the last fraction has been bought, the song will be automatically unlocked and uploaded to music platform of artist's choice.
+**tl;dr** Fractionalize a song NFT and let fans purchase the anonymized/encrypted fractions. They haven't heard the music yet. After the last fraction has been bought, the song will be automatically unlocked and uploaded to music platform of artist's choice. Then everybody can hear it for the first time, together.
 
 ---
 
