@@ -33,9 +33,11 @@ Artist uses the artist's dashboard to SIWE, upload their music, sign (?) to encr
 
 Dashboard should show all the projects that have been finalized and ongoing.
 
-Optional: - Add option to choose whether to upload file automatically once the sale is finished, or whether to send a notification (?) and then artist has to manually sign an action using his wallet to set in motion the fetching of encrypted data, unencrypting the file(s) and uploading to Soundcloud etc
+Optional: - Add option to choose whether to upload file automatically once the sale is finished, or whether to send a notification (?) and then artist has to manually sign an action using his wallet to set in motion the fetching of encrypted data, unencrypting the file(s) and uploading to Soundcloud etc.
 
 ### Fan's side
+
+Less clear how detailed should be, especially in the beginning. As a PoC, can easily be just a wallet sign-in, option to purchase the fraction, and progress dashboard showing the status of the sale and the state of the file (encrypted/decrypted/uploaded), and relevant links, such as a link to the SoundCloud page where the newly uploaded song is.
 
 ## Wonderings
 
@@ -50,3 +52,9 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 4. The artist can choose to fractionalize the music NFT in a certain number of parts that are then sold. But what if not all fractions are sold and it's taking too long to sell all of them? Artist can set a timer then set an expiration of the sale and:
    - send the remaining unsold fractions to existing fraction owners
    - burn the remaining fractions
+
+## Resources
+
+[SoundCloud API - Uploading Audio Files](https://developers.soundcloud.com/docs/api/guide#uploading)
+[nft.storage docs](https://nft.storage/docs/)
+[nft.storage api-docs](https://nft.storage/api-docs/)
