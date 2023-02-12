@@ -56,5 +56,7 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 ## Resources
 
 [SoundCloud API - Uploading Audio Files](https://developers.soundcloud.com/docs/api/guide#uploading)
+
 [nft.storage docs](https://nft.storage/docs/)
+
 [nft.storage api-docs](https://nft.storage/api-docs/)
