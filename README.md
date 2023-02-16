@@ -8,7 +8,7 @@ Instead of making the actual music of the NFT public before/while selling your f
 
 ---
 
-**tl;dr** Fractionalize a song NFT and let fans purchase the anonymized/encrypted fractions. They haven't heard the music yet. After the last fraction has been bought, the song will be automatically unlocked and uploaded to music platform of artist's choice. Then everybody can hear it for the first time, together.
+**tl;dr** Fractionalize a song NFT and let fans purchase the anonymized/encrypted fractions. They haven't heard the music yet. After the last fraction has been bought, the song will be automatically unlocked and uploaded to music platform of artist's choice. Then everybody can hear it for the first time, together. Blind crowdfunding!
 
 ---
 
@@ -47,7 +47,11 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 
 2. Can I use the encrypted file fraction's data as a seed for a randomly generated visual art piece to act as a nice additional gift and temporary fill-in for the final NFT?
 
+   - Seems to be quite challenging. We could set up a Chainlink Keeper to wait for an event emit from minting contract once sale is finished, and then
+
 3. The file original cannot be uploaded in its unencrypted form on IPFS until after the full sale has completed and the unencryption/uploading process has started because it would then exist in an unencrypted form before the official decryption has taken place. How can you establish a verifiable link between the eNFT and the non-existing uNFT without revealing the uNFT's metadata?
+
+   - You don't have to establish a verifiable link (whatever that means) between an eNFT and an uNFT; You can simply issues two separate tokens to the buyer: first genArt NFT or fractionalized song/album cover, then the actual song/album fraction NFT airdropped to all the holders of the particular collection of NFTs. As it's a two-step process, how can you offer a guarantee that the second drop will happen once the sale expires? I'm sure there is a solution for this, and certainly devs with experience could verify that the airdrop promise is real, but how to convince users that it's true? Will it have to be trust-based in the end? Need more experience!
 
 4. The artist can choose to fractionalize the music NFT in a certain number of parts that are then sold. But what if not all fractions are sold and it's taking too long to sell all of them? Artist can set a timer then set an expiration of the sale and:
    - send the remaining unsold fractions to existing fraction owners
@@ -60,3 +64,5 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 [nft.storage docs](https://nft.storage/docs/)
 
 [nft.storage api-docs](https://nft.storage/api-docs/)
+
+[diZKreet - privacy preserving zkNFTs on Aztec Network, redeemable on Ethereum](https://github.com/meirbank/ETHBogota2022)
