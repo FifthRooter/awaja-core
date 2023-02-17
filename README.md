@@ -39,7 +39,7 @@ Optional: - Add option to choose whether to upload file automatically once the s
 
 Less clear how detailed should be, especially in the beginning. As a PoC, can easily be just a wallet sign-in, option to purchase the fraction, and progress dashboard showing the status of the sale and the state of the file (encrypted/decrypted/uploaded), and relevant links, such as a link to the SoundCloud page where the newly uploaded song is.
 
-## Wonderings
+## Thinking through the solution out loud
 
 abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 
@@ -54,8 +54,13 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
    - You don't have to establish a verifiable link (whatever that means) between an eNFT and an uNFT; You can simply issues two separate tokens to the buyer: first genArt NFT or fractionalized song/album cover, then the actual song/album fraction NFT airdropped to all the holders of the particular collection of NFTs. As it's a two-step process, how can you offer a guarantee that the second drop will happen once the sale expires? I'm sure there is a solution for this, and certainly devs with experience could verify that the airdrop promise is real, but how to convince users that it's true? Will it have to be trust-based in the end? Need more experience!
 
 4. The artist can choose to fractionalize the music NFT in a certain number of parts that are then sold. But what if not all fractions are sold and it's taking too long to sell all of them? Artist can set a timer then set an expiration of the sale and:
+
    - send the remaining unsold fractions to existing fraction owners
    - burn the remaining fractions
+
+5. I think I've managed to zero in on the solution. Initially I thought about using [eth-crypto](https://github.com/pubkey/eth-crypto) package to encrypt data in a transaction, but it wasn't exactly an elegant solution, and it didn't really help with the decentralized storage aspect.
+
+   - In comes Arweave with its Bundlr Network, an Arweave scaling solution that uses optimistic finality that enables near instant storage and retrieval results with high level of confidence. Arweave and, by extension, Bundlr, is integrated with Polygon, so I can pay for storage deals using MATIC - perfect! However, simple storage on Bundlr is insufficient - we need both the music files as well as the music file URI to be enrypted up until the release of the songs on streaming platforms. This is where [Lit Protocol](https://developer.litprotocol.com/) comes into play. It's a blockchain-agnostic middleware layer that allows you to read and write encrypted/decrypted data between blockchains and off-chain platforms. Lit will allow us to [encrypt](https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/OnchainMetadata/encryptDecrypt) an NFTs metadata using our wallet and do other really cool stuff!
 
 ## Resources
 
@@ -66,3 +71,13 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 [nft.storage api-docs](https://nft.storage/api-docs/)
 
 [diZKreet - privacy preserving zkNFTs on Aztec Network, redeemable on Ethereum](https://github.com/meirbank/ETHBogota2022)
+
+[eth-crypto - Cryptographic javascript-functions for ethereum](https://github.com/pubkey/eth-crypto)
+
+[Lit Protocol - Developer docs](https://developer.litprotocol.com/)
+
+- Lit Protocol is a decentralized key management network powered by threshold cryptography. A blockchain-agnostic middleware layer, Lit can be used to read and write data between blockchains and off-chain platforms, powering conditional decryption and programmatic signing.
+
+[Bundlr x Arweave x Lit Protocol](https://developer.litprotocol.com/toolsandexamples/integrations/bundlrxarweave/)
+
+[Bundlr Network](https://docs.bundlr.network/)
