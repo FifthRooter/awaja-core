@@ -1,3 +1,10 @@
+                          __
+
+.---.-..--.--.--..---.-. |**|.---.-.
+| _ || | | || _ | | || _ |
+|_**.\_||**\_\_\_\_**||**_._| | ||\_**.\_|
+|\_\_\_|
+
 ## Description
 
 **This whole readme is a work in progress and a stream of consciousness as I tackle the technical details of the project.**
