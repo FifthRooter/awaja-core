@@ -10,6 +10,7 @@
     "hardhat": "^2.12.6"
   },
   "dependencies": {
+    "@lit-protocol/sdk-nodejs": "^1.1.248",
     "@openzeppelin/contracts": "^4.8.1"
   }
 }
