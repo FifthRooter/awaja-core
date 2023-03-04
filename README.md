@@ -1,11 +1,12 @@
 ```
-                          __        
+                          __
 .---.-..--.--.--..---.-. |__|.---.-.
 |  _  ||  |  |  ||  _  | |  ||  _  |
 |___._||________||___._| |  ||___._|
-                        |___|       
+                        |___|
 
 ```
+
 ## Description
 
 **This whole readme is a work in progress and a stream of consciousness as I tackle the technical details of the project.**
@@ -70,6 +71,8 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 
    - In comes Arweave with its Bundlr Network, an Arweave scaling solution that uses optimistic finality that enables near instant storage and retrieval results with high level of confidence. Arweave and, by extension, Bundlr, is integrated with Polygon, so I can pay for storage deals using MATIC - perfect! However, simple storage on Bundlr is insufficient - we need both the music files as well as the music file URI to be enrypted up until the release of the songs on streaming platforms. This is where [Lit Protocol](https://developer.litprotocol.com/) comes into play. It's a blockchain-agnostic middleware layer that allows you to read and write encrypted/decrypted data between blockchains and off-chain platforms. Lit will allow us to [encrypt](https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/OnchainMetadata/encryptDecrypt) an NFTs metadata using our wallet and do other really cool stuff!
 
+6. Can I use Chainlink Functions at any part of this process?
+
 ## Resources
 
 [SoundCloud API - Uploading Audio Files](https://developers.soundcloud.com/docs/api/guide#uploading)
@@ -89,3 +92,5 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
 [Bundlr x Arweave x Lit Protocol](https://developer.litprotocol.com/toolsandexamples/integrations/bundlrxarweave/)
 
 [Bundlr Network](https://docs.bundlr.network/)
+
+[Chainlink Functions](https://docs.chain.link/chainlink-functions)
