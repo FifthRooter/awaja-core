@@ -72,6 +72,7 @@ abbreviations: unencrypted NFT - uNFT, encrypted NFT - eNFT
    - In comes Arweave with its Bundlr Network, an Arweave scaling solution that uses optimistic finality that enables near instant storage and retrieval results with high level of confidence. Arweave and, by extension, Bundlr, is integrated with Polygon, so I can pay for storage deals using MATIC - perfect! However, simple storage on Bundlr is insufficient - we need both the music files as well as the music file URI to be enrypted up until the release of the songs on streaming platforms. This is where [Lit Protocol](https://developer.litprotocol.com/) comes into play. It's a blockchain-agnostic middleware layer that allows you to read and write encrypted/decrypted data between blockchains and off-chain platforms. Lit will allow us to [encrypt](https://developer.litprotocol.com/ToolsAndExamples/SDKExamples/OnchainMetadata/encryptDecrypt) an NFTs metadata using our wallet and do other really cool stuff!
 
 6. Can I use Chainlink Functions at any part of this process?
+   - Definitely! But they're still in Beta, so will have to wait until it comes out. Till then, gotta use existing tech.
 
 ## Resources
 
